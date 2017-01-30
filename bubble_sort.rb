@@ -4,10 +4,8 @@ class BubbleSort
    (length - 1).times do |sort|
      #count is 4.  - 1 because we need to account for 0 index (0..3).count = 4
      (length - 1).times do |index|
-      #  swap(collection, index)
-      #  require 'pry';binding.pry
-       puts "------------"
-     end
+       swap(collection, index)
+         end
    end
    collection
  end
