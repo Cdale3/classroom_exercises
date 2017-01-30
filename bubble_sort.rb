@@ -1,15 +1,14 @@
 class BubbleSort
   def sort(collection)
-   length = collection.length
-   (length - 1).times do |sort|
+   count = collection.length
+   (count - 1).times do |sort|
      #count is 4.  - 1 because we need to account for 0 index (0..3).count = 4
-     (length - 1).times do |index|
+     (count - 1).times do |index|
        swap(collection, index)
          end
-   end
+       end
    collection
  end
-
 end
 
 def swap(collection, index)
